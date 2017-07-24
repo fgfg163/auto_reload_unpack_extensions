@@ -44,12 +44,12 @@ co(function* () {
 
   $('[name=interval-time]').val(intervalTime);
 
+  if (watchUrls.length === 0) {
+    watchUrls = [''];
+  }
   for (var key in watchUrls) {
     var value = watchUrls[key];
     $('.watch-url-border').append(createNewInputWatchUrl({ value: value }));
-  }
-  if (watchUrls.length === 0) {
-    watchUrls = [''];
   }
 
   // 注册事件
