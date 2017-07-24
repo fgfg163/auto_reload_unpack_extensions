@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "auto reload unpacked extensions",
+  "description": "This tool need a HTML5 sse api to push message.",
+  "short_name": "Baidu WaiMai Dropper",
+  "browser_action": {
+    "default_title": "auto reload unpacked extensions",
+    "default_icon": "/logo.png",
+    "default_popup": "/popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "/utils/chrome-promise.js",
+      "/utils/co.min.js",
+      "/background/background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "cookies",
+    "<all_urls>",
+    "storage"
+  ],
+  "icons": {
+    "48": "/logo.png",
+    "128": "/logo.png"
+  }
+}

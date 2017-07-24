@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>auto reload unpack extensions</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div>enable</div>
+  <div>
+    <label><input type="radio" name="enable" value="1" />start</label>
+    <label><input type="radio" name="enable" value="0" />stop</label>
+  </div>
+
+  <div>interval time</div>
+  <div><input name="interval-time" /></div>
+
+  <div>watch url</div>
+  <div class="watch-url-border">
+    <div class="watch-url-wrap">
+      <!--<input class="watch-url" />-->
+    </div>
+  </div>
+  <div>
+    <!--<button class="add-button">添加</button>-->
+  </div>
+
+  <script src="../utils/jquery.min.js"></script>
+  <script src="../utils/chrome-promise.js"></script>
+  <script src="../utils/co.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
